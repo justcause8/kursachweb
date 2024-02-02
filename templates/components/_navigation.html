@@ -1,0 +1,59 @@
+<!-- {% for item in nav %}
+    <a href="{{ item.URL }}" {% if item.title == name %} class="active" {% endif %}>{{ item.title }}</a>
+{% endfor %}
+ -->
+
+<nav class="navbar navbar-expand-lg bg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="flag" src="/static/flag_UK_nav.jpg" alt="Флаг Великобритании"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                {% for item in nav %}
+                <li class="nav-item">
+                    <a class="nav-link textnav {% if item.title == name %}active{% endif %}" aria-current="page"
+                    href="{{ item.URL }}">{{ item.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- <nav>
+    <div class="bg">
+        <div class="row">
+            
+            <div class="col-1 ms-4 d-flex justify-content-center align-items-center">
+                <a class = "meny" href="/">Главная</a>
+            </div>
+
+            <div class="col-1 me-3 d-flex justify-content-center align-items-center">
+                <a class = "meny" href="/oxford">Оксфорд</a>
+            </div>
+
+            <div class="col-1 me-3 d-flex justify-content-center align-items-center">
+                <a class = "meny" href="/cambridge">Кембридж</a>
+            </div>
+
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <a class = "meny" href="/colledgeLondon">Имперский колледж Лондона</a>
+            </div>
+
+            <div class="col-1 d-flex justify-content-center align-items-center">
+                <a class = "meny" href="/about">Обо мне</a>
+            </div>
+
+            <div class="col-1 d-flex justify-content-center align-items-center">
+                <a class = "meny" href="/glossariy">Глоссарий</a>
+            </div>
+
+            <div class="col me-5 d-flex justify-content-end align-items-center">
+                <img class="flag" src="/static/flag_UK_nav.jpg" alt="Флаг Великобритании">
+            </div>
+        </div>
+    </div>
+</nav> -->

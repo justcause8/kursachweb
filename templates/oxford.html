@@ -1,0 +1,68 @@
+{% extends "___layout.html" %}
+
+{% block content %}
+
+
+<div class="background">
+    <div class="block">
+        <div class="blocktext">
+            <h3 style = "text-align: center;">Оксфордский университет</h3>
+            
+            <a class = "content" href="/">Главная</a>
+            <!-- <a class = "content" href="/Oxford">Oxford</a>
+            <a class = "content" href="/Cambridge.html">Cambridge</a>
+            <a class = "content" href="/ColledgeLondon.html">Imperial College London</a>
+            <a class = "content" href="/about.html">Обо мне</a> -->
+
+            <p> Этот университет — лучший не только в Великобритании, но и в мире! 
+            В 2020 году Оксфордский университет вновь занял первое место в мировом рейтинге от <a href="/glossariy">Times Higher Education</a>, 
+            опередив более 1300 вузов.</p>
+            
+            <p>ВУЗ считается первым университетом, который появился на Британских островах. 
+            В его стенах работали свыше 70 лауреатов Нобелевской и иных премий.</p>
+            
+            <div id="Oxford_list" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#Oxford_list" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#Oxford_list" data-bs-slide-to="1" aria-label="Slide 2"></button>                
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/static/Oxford_list2.jpg" class="d-block w-100 photo_uni" alt="University of Oxford">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/static/Oxford_list_inside.jpg" class="d-block w-100 photo_uni" alt="University of Oxford inside">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#Oxford_list" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#Oxford_list" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <p style = "text-align: center; font-size: 16px; text-decoration: underline">Оксфордский университет</p>
+            <p>Оксфордский университет состоит из центрального университета, 38 колледжей и 6 частных общежитий. Лучшие факультеты:</p>
+            
+            <ul>
+                <li>математика;</li>
+                <li>химия;</li>
+                <li>юриспруденция;</li>
+                <li>история;</li>
+                <li>искусство;</li>
+                <li>лингвистика;</li>
+                <li>бизнес.</li>
+            </ul>
+
+            <p>Как и многие английские колледжи и университеты, Оксфорд заботится о студентах. Обучающиеся получают доступ к лабораториям, библиотекам, музеям. 
+            Контроль за учебным процессом осуществляет сам университет. Он следит за проведением лекций и семинаров, контролирует защиту диссертаций, изучает содержание учебных программ.</p>
+
+            <p>Если желаете узнать побольше о данном ВУЗе, то вот ссылочка: <a href="https://ru.wikipedia.org/wiki/Оксфорд#">University of Oxford</a></p>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
